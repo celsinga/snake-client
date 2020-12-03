@@ -24,9 +24,6 @@ const connect = function() {
     } 
     recursion(index);
   });
-  // conn.on('connect', () => {
-  //   conn.write('Move: up');
-  // })
   // interpret incoming data as text
   conn.on('data', (data) => {
     console.log('Message from server:', data)
